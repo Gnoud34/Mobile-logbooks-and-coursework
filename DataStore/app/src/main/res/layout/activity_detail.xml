@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/bg">
+
+    <!-- HEADER -->
+
+    <!-- Avatar -->
+
+    <!-- NAME LABEL -->
+    <TextView
+        android:id="@+id/tvHeaderDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Contact Detail"
+        android:textColor="@color/textDark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgDetailAvatar"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeaderDetail" />
+
+    <TextView
+        android:id="@+id/txtLabelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textStyle="bold"
+        android:textColor="@color/textDark"
+        android:textSize="17sp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@id/imgDetailAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- NAME VALUE -->
+    <TextView
+        android:id="@+id/txtDetailNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textSize="16sp"
+        android:textColor="@color/textDark"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@id/txtLabelName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- DOB LABEL -->
+    <TextView
+        android:id="@+id/txtLabelDob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth:"
+        android:textStyle="bold"
+        android:textColor="@color/textDark"
+        android:textSize="17sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/txtDetailNameValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- DOB VALUE -->
+    <TextView
+        android:id="@+id/txtDetailDobValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textSize="16sp"
+        android:textColor="@color/textDark"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@id/txtLabelDob"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- EMAIL LABEL -->
+    <TextView
+        android:id="@+id/txtLabelEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/textDark"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/txtDetailDobValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- EMAIL VALUE -->
+    <TextView
+        android:id="@+id/txtDetailEmailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textSize="16sp"
+        android:textColor="@color/textDark"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@id/txtLabelEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- DELETE -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/txtDetailEmailValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- BACK -->
+    <Button
+        android:id="@+id/btnBackDetail"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/black"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
