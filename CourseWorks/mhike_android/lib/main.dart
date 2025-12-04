@@ -12,6 +12,8 @@ class MHikeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'M-Hike',
+      debugShowCheckedModeBanner: false,
+      showPerformanceOverlay: false,
       theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.green),
       home: const HomeScreen(),
     );
