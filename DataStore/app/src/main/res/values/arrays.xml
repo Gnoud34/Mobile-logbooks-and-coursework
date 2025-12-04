@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <array name="avatarSet">
-        <item>@drawable/menface1</item>
-        <item>@drawable/menface2</item>
-        <item>@drawable/womenface1</item>
-        <item>@drawable/womenface2</item>
-    </array>
-</resources>
